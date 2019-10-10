@@ -1,9 +1,9 @@
 <?php
 try
 {
- $dsn = "mysql:host=localhost;dbname=intohj"; // TÄhän jukkajauhianen@ipt.oamk.fi
+ $dsn = "mysql:host=localhost;dbname=intohj";
  $db = new PDO ($dsn, "phpUser", "phpPass");
- //print ("Connected\n");
+ print ("Connected\n");
 }
 catch (PDOException $e)
 {
