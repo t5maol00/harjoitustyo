@@ -1,0 +1,30 @@
+html,
+body{
+  height: 100%;
+  width: 100%;
+  }
+
+#header{
+    text-align: center;
+    height: 15%;
+
+    background-color: #808080;
+}
+
+#menu{
+    float: left;
+    text-align: center;
+    height: 100%;
+    width: 15%;
+    background-color: #808080;
+}
+
+#main{
+    margin-left: 15%;
+    text-align: center;
+    height: 100%;
+    width: 85%;
+    background-color: #C0C0C0;
+}
+
+/* #C0C0C0 */

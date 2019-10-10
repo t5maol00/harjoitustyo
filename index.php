@@ -1,0 +1,13 @@
+
+<?php include "menu.php" ?>
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Yhteystiedot</title>
+  </head>
+  <body>
+
+  </body>
+</html>
