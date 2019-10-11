@@ -12,9 +12,6 @@ $stmt->execute();
 
 $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
 print_r($result);
-
-
-
 ?>
 
 <h2>Haluatko varmasti poistaa henkilön?</h2>

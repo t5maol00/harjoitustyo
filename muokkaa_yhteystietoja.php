@@ -1,3 +1,9 @@
+<?php
+session_start();
+if(!isset($_SESSION['logged_in'])) {
+    header('Location:not_logged.php');  // Tätä ei saa käyttää jos sivulla on aikaisemmilla riveillä html kieltä. Siksi alkuun tämä.
+}
+?>
 
 <?php include "menu.php" ?>
 <?php include "connection.php"; ?>
