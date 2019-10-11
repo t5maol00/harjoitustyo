@@ -28,6 +28,7 @@
                  echo '<td>'.$row['osoite'].'</td>';
                  echo '<td>'.$row['puhelin'].'</td>';
                  echo '<td><a href="edit_yhteystieto.php?id='.$row['idyhteystiedot'].'">Muokkaa</a></td>';
+                 echo '<td><a href="delete_yhteystieto.php?id='.$row['idyhteystiedot'].'">Poista</a></td>';
                  echo '</tr>';
                }
                ?>
