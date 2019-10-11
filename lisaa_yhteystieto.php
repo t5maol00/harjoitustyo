@@ -12,12 +12,14 @@ $add='INSERT INTO customers VALUES("'.$_POST['en'].'","'.$_POST['sn'].'")';
 echo $add; */
 
 // Tämä on oikea tyyli.
-$stmt=$db->prepare("INSERT INTO yhteystiedot VALUES(:etunimi, :sukunimi, :osoite, :puhelin)");
+$stmt=$db->prepare("INSERT INTO yhteystiedot VALUES(:id, :osasto, :en, :sn, :os, :puh)");
 
-$stmt->bindParam(':etunimi', $_POST['etunimi']);
-$stmt->bindParam(':sukunimi', $_POST['sukunimi']);
-$stmt->bindParam(':osoite', $_POST['osoite']);
-$stmt->bindParam(':puhelin', $_POST['puhelin']);
+$stmt->bindParam(':id', $_POST['id']);
+$stmt->bindParam(':osasto', $_POST['osasto']);
+$stmt->bindParam(':en', $_POST['en']);
+$stmt->bindParam(':sn', $_POST['sn']);
+$stmt->bindParam(':os', $_POST['os']);
+$stmt->bindParam(':puh', $_POST['puh']);
 
 $stmt->execute();
 echo 'Lisättiin yhteystieto'
