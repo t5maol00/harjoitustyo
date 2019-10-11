@@ -13,9 +13,9 @@
       <h2>Etsi yhteystietoja</h2>
         <form class="" action="show_etsi.php" method="post">
           <select name="osasto" autofocus>
-            <option value="työnjohto">Työnjohto</option>
-            <option value="toimisto">Toimisto</option>
-            <option value="tuotanto">Tuotanto</option>
+            <option value="1">Työnjohto</option>
+            <option value="2">Toimisto</option>
+            <option value="3">Tuotanto</option>
           </select>
 
           <input type="submit" name="" value="Etsi">
