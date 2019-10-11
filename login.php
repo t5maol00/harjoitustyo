@@ -1,13 +1,12 @@
-
 <?php include "menu.php" ?>
+<?php include "connection.php" ?>
+<?php
 
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Yhteystiedot</title>
-  </head>
-  <body>
-      login joojoo
-  </body>
-</html>
+$annettu_kayttaja=$_POST['kayttaja'];
+$annettu_salasana=$_POST['salasana'];
+$oikea_salasana=""
+
+
+
+
+ ?>

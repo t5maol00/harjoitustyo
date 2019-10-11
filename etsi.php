@@ -11,6 +11,7 @@
   <body>
     <br>
       <h2>Etsi yhteystietoja</h2>
+        <br>
         <form class="" action="show_etsi.php" method="post">
           <select name="osasto" autofocus>
             <option value="1">Työnjohto</option>
