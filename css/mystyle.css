@@ -2,30 +2,53 @@ html,
 body{
   height: 100%;
   width: 100%;
-  }
+  background-color:#656835;
+}
+
+h2 {
+  color: #404040;
+}
+
+h3 {
+  color: #404040;
+}
 
 #header{
     text-align: center;
-    height: 15%;
-
-    background-color: #808080;
+    height: 5%;
+    background-color:#656835;
 }
 
 #menu{
-    float: left;
+    float: right;
     text-align: center;
     height: 100%;
     width: 15%;
-    background-color: #808080;
+    background-color:#656835;
+}
+
+#oikea_sivu{
+    float: right;
+    text-align: center;
+    height: 100%;
+    width: 15%;
+    background-color:#116cb6;
 }
 
 #main{
     margin-left: 15%;
     text-align: center;
     height: 100%;
-    width: 85%;
-    background-color: #C0C0C0;
+    width: 70%;
+    background-color:#bbbba0;
 }
 
 
-/* #C0C0C0 */
+
+
+/*
+Vanhoja värejä
+#C0C0C0
+#808080
+
+   */

@@ -1,3 +1,3 @@
 <?php include "menu.php"; ?>
-
-  Kirjaudu sisään muokataksesi yhteystietoja.
+<br><br><br>
+  Kirjaudu sisään käyttääksesi tätä sivua.

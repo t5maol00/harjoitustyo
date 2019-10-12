@@ -11,7 +11,7 @@ $stmt->bindParam(':id', $_GET['id']);
 $stmt->execute();
 
 $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
-print_r($result);
+// print_r($result);
 ?>
 
 <h2>Haluatko varmasti poistaa henkilön?</h2>
