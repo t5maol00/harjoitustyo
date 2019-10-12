@@ -8,17 +8,19 @@
   <body>
     <div id="header">
       <br><br>
-      <h1>haloo</h1>
+      <h1></h1>
     </div>
     <div id="menu">
+      <p>
       <ul>
         <br><br><br>
-        <a href="login_form.php">Kirjaudu sisään</a><br><br>
-    		<a href="etsi.php">Etsi yhteystietoja</a><br><br>
-        <a href="muokkaa_yhteystietoja.php">Muokkaa yhteystietoja</a><br><br>
-        <a href="luo_tunnus.php">Luo tunnus</a><br><br>
-        <a href="logout.php">Kirjaudu ulos</a><br><br>
+        <a href="etsi.php"><img src="img/button_etsi-yhteystietoja.png"></a><br><br>
+        <a href="login_form.php" class="button"><img src="img/button_kirjaudu-sisaan.png"></a><br>
+        <a href="muokkaa_yhteystietoja.php"><img src="img/button_muokkaa.png"></a><br>
+        <a href="luo_tunnus.php"><img src="img/button_luo-tunnus.png"></a><br><br>
+        <a href="logout.php"><img src="img/button_kirjaudu-ulos.png"></a><br>
       </ul>
+    </p>
     </div>
-
+ </body>
     <div id="main">

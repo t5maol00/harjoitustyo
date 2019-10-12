@@ -1,7 +1,7 @@
 <?php include "menu.php"; ?>
 <?php include "connection.php"; ?>
 <?php
-print_r($_POST);
+// print_r($_POST);
 
 $sql = "DELETE FROM yhteystiedot WHERE idyhteystiedot=:id";
 
@@ -11,7 +11,7 @@ $stmt->execute();
 
 echo 'Henkilö poistettu!';
  ?>
-
+<br><br>
 <form action="muokkaa_yhteystietoja.php">
  <input type="submit" name="" value="OK">
 </form>

@@ -16,7 +16,7 @@ if(!isset($_SESSION['logged_in'])) {
   </head>
   <body>
 
-
+<br>
       <h2>Luo käyttäjätunnus</h2>
       <form class="" action="save_kayttaja.php" method="post">
         <input type="hidden" name="id" value=""> <br>

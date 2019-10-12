@@ -15,9 +15,11 @@ if(password_verify($annettu_salasana, $oikea_salasana)) {
   session_start();
   $_SESSION['logged_in']=true;
   $_SESSION['username']=$annettu_tunnus;
-  echo 'Olet kirjautunut sisään';
+  echo '<br><br>';
+  echo 'Tervetuloa '.$annettu_tunnus.'!';
 }
 else {
-  echo '<p>hypätään tännew</p>';
+  echo '<br><br>';
+  echo '<p>Käyttäjätunnus ja salasana eivät täsmää!</p>';
 }
  ?>

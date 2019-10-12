@@ -1,5 +1,5 @@
 create table yhteystiedot (
-idyhteystiedot INT primary key,
+idyhteystiedot INT auto_increment primary key,
 osasto_idosasto INT,
 etunimi VARCHAR(45),
 sukunimi VARCHAR(45),
@@ -12,9 +12,9 @@ insert into yhteystiedot values(1, 1, 'Matti', 'Meikalainen', 'Matinkuja 2', '09
 insert into yhteystiedot values(2, 2, 'Erkki', 'Erakko', 'Erakkotie 3', '23492349002');
 insert into yhteystiedot values(3, 3, 'Liisa', 'Lepakko', 'Batmaninkuja 24', '0500399509');
 insert into yhteystiedot values(4, 3, 'Esko', 'Emakko', 'Tie 34', '049493049');
-insert into yhteystiedot values(5, 1, 'Jouko', 'Juurakko', 'johtajantie 23');
-insert into yhteystiedot values(6, 3, 'Usko', 'Luttinen', 'Pappilankuja 5');
-insert into yhteystiedot values(7, 2, 'Toimisto', 'Rotta', 'Kissakuja 4');
+insert into yhteystiedot values(5, 1, 'Jouko', 'Juurakko', 'johtajantie 23', 32434394);
+insert into yhteystiedot values(6, 3, 'Usko', 'Luttinen', 'Pappilankuja 5', 320493842);
+insert into yhteystiedot values(7, 2, 'Toimisto', 'Rotta', 'Kissakuja 4', 203948230984);
 
 
 insert into osasto values(1, 'tyonjohto');
