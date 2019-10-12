@@ -4,7 +4,5 @@
   session_start();
   session_destroy();
  ?>
-
-<p>
+<br>
   Olet kirjautunut ulos.
-</p>

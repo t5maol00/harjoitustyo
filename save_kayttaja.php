@@ -11,13 +11,15 @@
 $add='INSERT INTO customers VALUES("'.$_POST['en'].'","'.$_POST['sn'].'")';
 echo $add; */
 
+// Syötettyjen salasanojen yhteneväisyyden tarkistus
 if ($_POST['salasana'] == $_POST['salasana2']) {
 
-$stmt=$db->prepare("INSERT INTO user VALUES(:id, :user, :password)");
+// Tässä kryptataan annettu salasana
+$encrypted_pass = password_hash($_POST['salasana'],PASSWORD_DEFAULT);
 
-$stmt->bindParam(':id', $_POST['id']);
+$stmt=$db->prepare("INSERT INTO user (username,password) VALUES(:user, :password)");
 $stmt->bindParam(':user', $_POST['kayttaja']);
-$stmt->bindParam(':password', $_POST['salasana']);
+$stmt->bindParam(':password', $encrypted_pass);
 $stmt->execute();
 
 

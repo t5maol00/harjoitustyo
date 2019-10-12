@@ -2,16 +2,22 @@
 <?php include "connection.php" ?>
 <?php
 
-$annettu_tunnus=$_POST['kayttaja'];
 $annettu_salasana=$_POST['salasana'];
-$oikea_salasana='pass123';
-if ($annettu_salasana == $oikea_salasana) {
+$annettu_tunnus=$_POST['username'];
+// $oikea_salasana='pass123';
+
+$stmt=$db->prepare("SELECT password FROM user WHERE username=:username");
+$stmt->bindParam(':username', $annettu_tunnus);
+$stmt->execute();
+$oikea_salasana = $stmt->fetch(PDO::FETCH_COLUMN);
+
+if(password_verify($annettu_salasana, $oikea_salasana)) {
   session_start();
   $_SESSION['logged_in']=true;
   $_SESSION['username']=$annettu_tunnus;
-  echo '<p>Olet kirjautunut sisään</p>';
+  echo 'Olet kirjautunut sisään';
 }
 else {
-  echo '<p>Tunnus ja salasana eivät täsmää</p>';
+  echo '<p>hypätään tännew</p>';
 }
  ?>
