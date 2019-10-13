@@ -10,7 +10,7 @@
   </head>
   <body>
     <br><br>
-      <h2>Tevetuloa!</h2>
+      <h2>Tervetuloa!</h2>
       <br><br>
 
   </body>
